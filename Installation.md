@@ -20,7 +20,7 @@ If you are using Docker, please see [Docker setup guide](https://hub.docker.com/
 1. Extract the latest Insight [release](https://github.com/Nathan-LS/Insight/releases) archive.
 2. Navigate to the **EVE-Insight** folder after extracting.
 3. Find and open the 'default-config.ini' file with a text editor.
-4. Go to [Discord Developer](https://discordapp.com/developers/applications/me) and create a **New App**.
+4. Go to [Discord Developer](https://discord.com/developers/applications/me) and create a **New App**.
     * No **Redirect URL** is required.
     * After creating a new app, edit your app and click **Create a Bot User**.
     * Ensure the **Public Bot** checkbox is enabled and the **Require OAuth2 Code Grant** is disabled.
@@ -29,7 +29,7 @@ like this:
     ```
     [discord]
     token = YourDiscordAppTokenGoesHereWithoutQuotes
-    ;required - Create a new Discord app at https://discordapp.com/developers/applications/me and set token to your App's token
+    ;required - Create a new Discord app at https://discord.com/developers/applications/me and set token to your App's token
     ```
 6. Go to [CCP Developers](https://developers.eveonline.com/applications/create) and create a new app with the following settings:
     * **Connection Type** = Authentication & API Access
@@ -52,10 +52,10 @@ Note: On the initial run Insight will begin importing data from the SDE database
     * Be careful to never lose your **config.ini** file as the token column encryption secret is stored in it.
 
 ## Inviting your bot
-1. Find your Discord application's id from [Discord Apps](https://discordapp.com/developers/applications/me).
+1. Find your Discord application's id from [Discord Apps](https://discord.com/developers/applications/me).
 2. Edit this URL to include your app's client ID:
     ```
-    https://discordapp.com/api/oauth2/authorize?client_id=YourClientIDHere&permissions=149504&scope=bot
+    https://discord.com/api/oauth2/authorize?client_id=YourClientIDHere&permissions=149504&scope=bot
     ```
 ### or
 1. A link is provided when Insight starts. Check the program console and copy down the **Invite Link**.
