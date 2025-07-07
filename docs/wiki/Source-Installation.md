@@ -1,5 +1,5 @@
 # Installation Options
-This installation guide covers installing Insight and the required packages from source. Binary versions and a Docker image of Insight are available. See [hosting Insight](https://github.com/Nathan-LS/Insight#hosting-insight) for alternative methods of hosting Insight. Please consider using the Docker image of Insight if you are unfamiliar with installing packages or running applications on the Python Interpreter in Linux. Please be aware that running Insight from source specifically requires a Python 3.6 interpreter.
+This installation guide covers installing Insight and the required packages from source. Binary versions and a Docker image of Insight are available. See [hosting Insight](https://github.com/Nathan-LS/Insight#hosting-insight) for alternative methods of hosting Insight. Please consider using the Docker image of Insight if you are unfamiliar with installing packages or running applications on the Python Interpreter in Linux. Insight now targets **Python 3.11** or newer.
 
 # Table of Contents
 - [Installation Options](#installation-options)
@@ -17,7 +17,7 @@ This installation guide covers installing Insight and the required packages from
 - [Further Reading](#further-reading)
 
 # Requirements (running from source)
-* Python 3.6 (Prior versions of Python will not work. Python 3.7+ is currently unsupported.)
+* Python 3.11 (Older versions may work but are not tested.)
 * Packages in requirements.txt
 * The latest [sqlite-latest.sqlite.bz2](https://www.fuzzwork.co.uk/dump/) from Fuzzwork
 * Git
@@ -25,7 +25,7 @@ This installation guide covers installing Insight and the required packages from
 # Installation steps
 This guide will step you through setting up Insight on a Debian/Ubuntu operating system. 
 
-Note: A recent version of Ubuntu 18.04+ is recommended as Python 3.6 is included in the default repositories. You will need to build Python 3.6 from source if your Linux distribution only includes an earlier version of python in the repositories. It is generally not recommended to mix multiple Python 3 versions on a system as things can break. 
+Note: A recent version of Ubuntu 22.04+ is recommended as Python 3.11 is included in the default repositories.
 
 Let's start by making sure we have all of the required packages needed to run Insight:
 ```
@@ -38,9 +38,9 @@ python3 -V
 ```
 You should see:
 ```
-Python 3.6.x
+Python 3.11.x
 ```
-Note: Insight requires Python 3.6 specifically. Earlier versions lack support for some of the asyncio features and syntax used in Insight. Python 3.7 causes issues with the third-party swagger-client which will eventually be replaced.
+Insight is tested on Python 3.11 and newer which includes all required asyncio features.
 
 ### Cloning the project and making your virtualenv
 Navigate to where you wish to keep the Insight project and make a new project directory. In this example we will create a directory in the current user's home directory to store files.
@@ -97,7 +97,7 @@ nano default-config.ini
 ```
 
 #### Discord
-Navigate to [Discord Applications](https://discordapp.com/developers/applications/me) in a web browser, click **My Apps** and then **New App**.
+Navigate to [Discord Applications](https://discord.com/developers/applications/me) in a web browser, click **My Apps** and then **New App**.
 
 Name your app and provide a description. No redirect URL is required. After clicking **Create App**, select **Create a Bot User**.
 
@@ -108,7 +108,7 @@ Click **click to reveal** next to **Token** under the Bot settings. Copy this to
 ```
 [discord]
 token = YourDiscordAppTokenGoesHere
-;required - Create a new Discord app at https://discordapp.com/developers/applications/me and set token to your App's token
+;required - Create a new Discord app at https://discord.com/developers/applications/me and set token to your App's token
 
 ```
 
@@ -152,11 +152,11 @@ python3 Insight
 Insight will start and begin importing data from the SDE. On the first initial run it can take up to 10 minutes to import everything from the SDE. On subsequent runs Insight will only import missing static data which takes little time.
 
 ### Inviting your new bot
-You need your Discord application's client ID found [here](https://discordapp.com/developers/applications/me) to invite your newly created bot. Select your Discord application and copy down the **Client ID**.
+You need your Discord application's client ID found [here](https://discord.com/developers/applications/me) to invite your newly created bot. Select your Discord application and copy down the **Client ID**.
 
 Edit the following URL to include your **Client ID**. Navigating to this URL will allow users to invite the bot to their server.
 ```
-https://discordapp.com/api/oauth2/authorize?client_id=ClientIDGoesHere&permissions=0&scope=bot
+https://discord.com/api/oauth2/authorize?client_id=ClientIDGoesHere&permissions=0&scope=bot
 ``` 
 
 # Further Reading

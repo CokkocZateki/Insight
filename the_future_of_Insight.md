@@ -2,6 +2,11 @@
 Greetings! I am Natuli, the creator of the [Insight Discord bot project](https://github.com/EVEInsight/Insight) and operator of the public [Insight Discord bot instance](https://discord.eveinsight.net/).
 Insight streamed kills to Discord from zKillboard.com to provide corporate/alliance feeds, capital/supercapital radar, ship proximity detection, and more for nearly four years.
 
+## 2025 Update
+Development officially ceased in 2022, but community interest has revived the project.
+As of 2025 Insight is once again under active development with plans to modernize the codebase and introduce new modules.
+Contributions are encouraged and welcomed.
+
 I have maintained Insight as a project for four years and during the journey I have learned quite a bit about the EVE API, asynchronous programming, the Discord API, microservices, hosting infrastructure, and testing/deployment automation.
 A good amount of time (and money) has gone in to maintaining this project and hosting it freely for anyone to use and enjoy.
 

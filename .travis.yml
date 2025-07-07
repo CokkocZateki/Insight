@@ -1,13 +1,12 @@
-group: travis_latest
+group: travis
 dist: bionic
 language: python
 services:
   - docker
 python:
-  - "3.6"
-  - "3.7"
+  - "3.11"
 install:
-  - docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli:latest generate -i "https://esi.evetech.net/_latest/swagger.json" -l python -o /local/swagger-python-client
+  - docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli:latest generate -i "https://esi.evetech.net/latest/swagger.json" -l python -o /local/swagger-python-client
   - sudo chown -R $USER swagger-python-client
   - cd swagger-python-client
   - python3 setup.py install

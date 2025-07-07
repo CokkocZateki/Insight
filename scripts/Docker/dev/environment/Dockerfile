@@ -1,14 +1,14 @@
 # build - ensure in git root of project - Sends content of ./scripts/Docker/dev/environment/ to build context.
-# windows:  docker build -t insight-buildenv --no-cache --build-arg CodegenVersion="2.4.24" --build-arg PythonTag="3.6.15-buster" -f .\scripts\Docker\dev\environment\Dockerfile .\scripts\Docker\dev\environment\
-# linux:    docker build -t insight-buildenv --no-cache --build-arg CodegenVersion="2.4.24" --build-arg PythonTag="3.6.15-buster" -f ./scripts/Docker/dev/environment/Dockerfile ./scripts/Docker/dev/environment/
+# windows:  docker build -t insight-buildenv --no-cache --build-arg CodegenVersion="2.4.24" --build-arg PythonTag="3.11-slim-bullseye" -f .\scripts\Docker\dev\environment\Dockerfile .\scripts\Docker\dev\environment\
+# linux:    docker build -t insight-buildenv --no-cache --build-arg CodegenVersion="2.4.24" --build-arg PythonTag="3.11-slim-bullseye" -f ./scripts/Docker/dev/environment/Dockerfile ./scripts/Docker/dev/environment/
 
-ARG PythonTag="3.6.15-buster"
+ARG PythonTag="3.11-slim-bullseye"
 
 FROM openjdk:11 as SwaggerRunner
 ARG CodegenVersion="2.4.25"
 RUN wget https://repo1.maven.org/maven2/io/swagger/swagger-codegen-cli/$CodegenVersion/swagger-codegen-cli-$CodegenVersion.jar -O swagger-codegen-cli.jar
 RUN java -jar ./swagger-codegen-cli.jar generate \
- -i "https://esi.evetech.net/_latest/swagger.json" \
+ -i "https://esi.evetech.net/latest/swagger.json" \
  -l python \
  -o /python-client
 

@@ -20,7 +20,7 @@ class About(UnboundCommandBase):
             "[Insight on Docker Hub](https://hub.docker.com/r/nathanls/insight/)",
             "[View ChangeLog](https://github.com/Nathan-LS/Insight/blob/master/ChangeLog.md)",
             "[Invite me to your Discord server]({invite_url})",
-            "[Join Insight support Discord for additional help](https://discord.gg/Np3FCUn)"
+            "[Join Insight support Discord for additional help](https://discord.eveinsight.net)"
         ]:
             s += "{}\n".format(l)
         s += "\n**Donate**\n" \

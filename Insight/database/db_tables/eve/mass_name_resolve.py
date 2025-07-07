@@ -11,7 +11,7 @@ import InsightLogger
 class name_resolve(name_only):
     @classmethod
     def post_url(cls):
-        return "https://esi.evetech.net/latest/universe/names/?datasource=tranquility"
+        return "https://esi.evetech.net/v3/universe/names/?datasource=tranquility"
 
     @classmethod
     def __get_objects_with_missing_names(cls, service_module, exclude_nonentity=False, exclude_entity=False):

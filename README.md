@@ -1,5 +1,7 @@
 # Project Status
-This project and repository is no longer actively maintained or supported. See [The Future of Insight](https://github.com/EVEInsight/Insight/blob/master/the_future_of_Insight.md) document for reasoning and an FAQ.
+In 2022 Insight development was halted. Community interest has since revived the
+project and **development resumed in 2025**. For historical context see [The
+Future of Insight](https://github.com/EVEInsight/Insight/blob/master/the_future_of_Insight.md).
 Thank you all for supporting and enjoying Insight over the years!
 
 Fly safe o7
@@ -10,7 +12,7 @@ Fly safe o7
 [![Build status](https://ci.appveyor.com/api/projects/status/8il5or4sw7x6sa8n?svg=true)](https://ci.appveyor.com/project/Nathan-LS/insight)
 [![codecov](https://codecov.io/gh/Nathan-LS/Insight/branch/development/graph/badge.svg)](https://codecov.io/gh/Nathan-LS/Insight)
 [![](https://img.shields.io/github/license/Nathan-LS/Insight.svg)](https://github.com/Nathan-LS/Insight/blob/master/LICENSE.md)
-[![](https://img.shields.io/discord/379777846144532480.svg)](https://discord.gg/Np3FCUn)
+[![](https://img.shields.io/discord/379777846144532480.svg)](https://discord.eveinsight.net)
 [![](https://img.shields.io/badge/-Wiki-blueviolet)](https://wiki.eveinsight.net)
 
 Insight provides [EVE Online](https://www.eveonline.com/) killmail streaming and utility commands for Discord. Insight can stream personal or corporate killboards, detect supercapitals with a proximity radar, estimate ship composition from local chat scans, and more!
@@ -26,15 +28,15 @@ Insight is available publicly hosted for invites directly to Discord servers. Th
 See [hosting Insight](#hosting-insight) if you are interested in hosting your own private instance of Insight.
 ## Public Insight Bot
 [![Discord Bots](https://discordbots.org/api/widget/463952393206497290.svg)](https://discordbots.org/bot/463952393206497290)
-* **Insight** (with preconfigured role): [Insight Bot Invite Link](https://discordapp.com/api/oauth2/authorize?client_id=463952393206497290&permissions=149504&scope=bot)
-* **Insight** (without preconfigured role): [Insight Bot Invite Link](https://discordapp.com/api/oauth2/authorize?client_id=463952393206497290&permissions=0&scope=bot)
+* **Insight** (with preconfigured role): [Insight Bot Invite Link](https://discord.com/api/oauth2/authorize?client_id=463952393206497290&permissions=149504&scope=bot)
+* **Insight** (without preconfigured role): [Insight Bot Invite Link](https://discord.com/api/oauth2/authorize?client_id=463952393206497290&permissions=0&scope=bot)
 
 ## Test Bot
-* [Insight Test Bot Invite](https://discordapp.com/api/oauth2/authorize?client_id=477314845608378369&permissions=149504&scope=bot)
+* [Insight Test Bot Invite](https://discord.com/api/oauth2/authorize?client_id=477314845608378369&permissions=149504&scope=bot)
   * This test bot normally runs the latest development branch build. There are no guarantees of uptime or stability. Data from this test bot is often wiped.
 
 ## Support Discord
-If you have questions, suggestions, or bug reports feel free to drop by the [project support server.](https://discord.gg/Np3FCUn)
+If you have questions, suggestions, or bug reports feel free to drop by the [project support server.](https://discord.eveinsight.net)
 
 # Donate
 If you enjoy Insight, please consider donating ISK to [Natuli](https://evewho.com/character/1326083433) in-game.

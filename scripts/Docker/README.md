@@ -17,7 +17,7 @@ Fly safe o7
 # Quick reference
 * **Where to get help:**
 
-    [Insight Discord support server](https://discord.gg/Np3FCUn)
+    [Insight Discord support server](https://discord.eveinsight.net)
 * **Where to file issues:**
     
     [https://github.com/EVEInsight/Insight/issues](https://github.com/EVEInsight/Insight/issues)
@@ -101,7 +101,7 @@ volumes:
 ```
 
 # Configuring Insight
-1. Go to [Discord Developer](https://discordapp.com/developers/applications/me) and create a **New App**.
+1. Go to [Discord Developer](https://discord.com/developers/applications/me) and create a **New App**.
     * No **Redirect URL** is required.
     * After creating a new app, edit your app and click **Create a Bot User**.
     * Ensure the **Public Bot** checkbox is enabled and the **Require OAuth2 Code Grant** is disabled.
@@ -125,10 +125,10 @@ docker pull nathanls/insight
 There is no need to manually update the SDE or any files associated with the Insight build as the latest dependencies are all included within the image.
 
 # Inviting your bot
-1. Find your Discord application's id from [Discord Apps](https://discordapp.com/developers/applications/me).
+1. Find your Discord application's id from [Discord Apps](https://discord.com/developers/applications/me).
 2. Edit this URL to include your app's client ID:
     ```
-    https://discordapp.com/api/oauth2/authorize?client_id=YourClientIDHere&permissions=149504&scope=bot
+    https://discord.com/api/oauth2/authorize?client_id=YourClientIDHere&permissions=149504&scope=bot
     ```
 **or**
 * A link is provided when Insight starts. Check the program console and copy down the **Invite Link**.
@@ -152,7 +152,7 @@ Optional path to the SQLITE database if using the sqlite3 driver.
 Email address to include in request headers from Insight when contacting APIs. This should be an email of the bot admin for API managers to contact for service abuse or issues.
 
 ### ```DISCORD_TOKEN```
-The Discord bot token from [Discord Apps](https://discordapp.com/developers/applications/me).
+The Discord bot token from [Discord Apps](https://discord.com/developers/applications/me).
 
 ### ```CCP_CLIENT_ID```
 The CCP application ID obtained from [EVE App Developers](https://developers.eveonline.com/applications/create).

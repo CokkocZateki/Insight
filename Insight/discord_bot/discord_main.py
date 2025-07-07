@@ -42,7 +42,7 @@ class Discord_Insight_Client(discord.Client):
 
     def get_invite_url(self):
         try:
-            return 'https://discordapp.com/api/oauth2/authorize?client_id={}&permissions=149504&scope=bot' \
+            return 'https://discord.com/api/oauth2/authorize?client_id={}&permissions=149504&scope=bot' \
                    ''.format(self.user.id)
         except:
             return ""

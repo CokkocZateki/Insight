@@ -6,7 +6,7 @@ max_jobs: 1
 image: Visual Studio 2017
 environment:
   matrix:
-  - PYTHON: C:\Python36-x64
+  - PYTHON: C:\Python311-x64
 install:
 - ps: >-
     Invoke-WebRequest -OutFile swagger-client-python.zip https://github.com/Nathan-LS/Insight/releases/download/v1.3.1/swagger-client-python.zip
