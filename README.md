@@ -1,5 +1,7 @@
 # Project Status
-This project and repository is no longer actively maintained or supported. See [The Future of Insight](https://github.com/EVEInsight/Insight/blob/master/the_future_of_Insight.md) document for reasoning and an FAQ.
+In 2022 Insight development was halted. Community interest has since revived the
+project and **development resumed in 2025**. For historical context see [The
+Future of Insight](https://github.com/EVEInsight/Insight/blob/master/the_future_of_Insight.md).
 Thank you all for supporting and enjoying Insight over the years!
 
 Fly safe o7
